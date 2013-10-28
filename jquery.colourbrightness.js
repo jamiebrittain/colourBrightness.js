@@ -1,3 +1,14 @@
+/*
+ *  colourBrightness.js
+ *
+ *  Copyright 2013, Jamie Brittain - http://jamiebrittain.com
+ *  Released under the WTFPL license
+ *  http://sam.zoy.org/wtfpl/
+ *
+ *  Github:  http://github.com/jamiebrittain/colourBrightness.js
+ *  Version: 1.0
+ */
+
 (function($){
   $.fn.colourBrightness = function(){
     var r,g,b,brightness,

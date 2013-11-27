@@ -6,7 +6,7 @@
  *  http://sam.zoy.org/wtfpl/
  *
  *  Github:  http://github.com/jamiebrittain/colourBrightness.js
- *  Version: 1.0
+ *  Version: 1.1
  */
 
 (function($){
@@ -15,7 +15,7 @@
         colour = this.css("background-color");
 
     if (colour.match(/^rgb/)) {
-      colour = colour.match(/rgb\(([^)]+)\)/)[1];
+      colour = colour.match(/rgba?\(([^)]+)\)/)[1];
       colour = colour.split(/ *, */).map(Number);
       r = colour[0];
       g = colour[1];

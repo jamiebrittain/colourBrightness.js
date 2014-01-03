@@ -4,13 +4,21 @@
         <meta charset="utf-8">
         <title>Demo of colourBrightness.js jQuery plugin</title>
         <style>
-        	.lightbox {
+        	.row {
         		background-color: #333;
         		padding: 10px 15px;
         	}
-        	.lightbox2 {
+        	.row2 {
         		background-color: #ccc;
         		padding: 10px 15px;
+        	}
+        	p {
+        		background-color: rgb(50,50,50);
+        		padding: 10px 15px;
+        		line-height: 1.4;
+        	}
+        	span {
+        		background-color: rgb(175,175,175);
         	}
 
         	.light {
@@ -28,20 +36,27 @@
 			// Target your element(s)
 			$('.lightbox, .lightbox2').colourBrightness();
 			// $('.lightbox2').colourBrightness();
+
+			$('p, span').colourBrightness();
 		});
         </script>
     </head>
     <body>
     	<h1>Demo: colourBrightness.js jQuery plugin</h1>
-        <div class="lightbox">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
-        <div class="lightbox2">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
-        <div class="lightbox">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
-        <div class="lightbox2">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
-        <div class="lightbox">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
-        <div class="lightbox">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
-        <div class="lightbox2">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
-        <div class="lightbox">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
-        <div class="lightbox">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
-        <div class="lightbox2">Text within a text, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row2">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row2">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row2">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        <div class="row2">Text within a div, color changed depending on background color, thanks to colourBrightness.js</div>
+        
+        <h3>It also works on span and p elements (and any elements that accept a background-color CSS property</h3>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique congue nunc, et <span>bibendum turpis sodales eget. Proin risus ante, vestibulum sed libero malesuada</span>, lacinia eleifend quam. Vivamus feugiat euismod nisi quis semper. Cras pharetra, enim non commodo volutpat, felis mauris dictum neque, quis molestie erat nulla eget metus. Integer vulputate tempus quam, et suscipit augue porta id. Nam sed velit sed mi tristique mattis vitae vitae odio. Sed metus nibh, viverra eu vulputate id, dapibus at lorem. Sed ac venenatis libero. Sed interdum ante eu ligula adipiscing hendrerit.</p>
+        <p>Curabitur et mauris pharetra, laoreet tortor vel, tempor sem. Sed turpis mi, rhoncus sed rhoncus luctus, molestie sed nisi. <span>Etiam non mauris dignissim, imperdiet felis in, scelerisque tortor.</span> Etiam molestie urna sed erat volutpat, at ultricies lorem tincidunt. Nunc iaculis pulvinar lorem, id ornare leo cursus sit amet. Curabitur vel felis ante. Quisque interdum est nec quam malesuada ultricies. Pellentesque pellentesque sollicitudin luctus. <span>Ut neque ante, facilisis sit amet sem sit amet, imperdiet iaculis felis.</span></p>
     </body>
 </html>

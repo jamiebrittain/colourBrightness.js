@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="author" href="humans.txt">
+        <style>
+        	.lightbox {
+        		background-color: #333;
+        	}
+        	.lightbox2 {
+        		background-color: #ccc;
+        	}
+
+        	.light {
+        	  color: #000;
+        	}
+
+        	.dark {
+        	  color: #fff;
+        	}
+        </style>
+        <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script src="jquery.colourbrightness.js"></script>
+        <script>
+		$(document).ready(function(){
+			// Target your element
+			$('.lightbox, .lightbox2').colourBrightness();
+			// $('.lightbox2').colourBrightness();
+		});
+        </script>
+    </head>
+    <body>
+        <div class="lightbox">This is text in here</div>
+        <div class="lightbox2">This is text in here</div>
+        <div class="lightbox">This is text in here</div>
+        <div class="lightbox2">This is text in here</div>
+        <div class="lightbox">This is text in here</div>
+        <div class="lightbox">This is text in here</div>
+        <div class="lightbox2">This is text in here</div>
+        <div class="lightbox">This is text in here</div>
+        <div class="lightbox">This is text in here</div>
+        <div class="lightbox2">This is text in here</div>
+    </body>
+</html>

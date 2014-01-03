@@ -6,7 +6,7 @@
  *  http://sam.zoy.org/wtfpl/
  *
  *  Github:  http://github.com/jamiebrittain/colourBrightness.js
- *  Version: 1.1
+ *  Version: 1.2
  */
 
  (function($){

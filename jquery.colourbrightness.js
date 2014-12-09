@@ -27,7 +27,7 @@
         colour = getBackgroundColor(this);
 
     if (colour.match(/^rgb/)) {
-      colour = colour.match(/rgba\(([^)]+)\)/)[1];
+      colour = colour.match(/rgba?\(([^)]+)\)/)[1];
       colour = colour.split(/ *, */).map(Number);
       r = colour[0];
       g = colour[1];

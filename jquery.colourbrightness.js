@@ -11,11 +11,23 @@
 
 (function($){
   $.fn.colourBrightness = function(){
+    function getBackgroundColor($el) {
+      var bgColor = "";
+      while($el[0].tagName.toLowerCase() != "html") {
+        bgColor = $el.css("background-color");
+        if(bgColor != "rgba(0, 0, 0, 0)" && bgColor != "transparent") {
+          break;
+        }
+        $el = $el.parent();
+      }
+      return bgColor;
+    }
+    
     var r,g,b,brightness,
-        colour = this.css("background-color");
+        colour = getBackgroundColor(this);
 
     if (colour.match(/^rgb/)) {
-      colour = colour.match(/rgb\(([^)]+)\)/)[1];
+      colour = colour.match(/rgba\(([^)]+)\)/)[1];
       colour = colour.split(/ *, */).map(Number);
       r = colour[0];
       g = colour[1];

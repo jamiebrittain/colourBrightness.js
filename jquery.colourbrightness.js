@@ -51,5 +51,6 @@
       // black text
       this.removeClass("dark").addClass("light");
     }
+    return this;
   }
 })(jQuery);

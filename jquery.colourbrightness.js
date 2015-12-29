@@ -1,12 +1,12 @@
 /*
  *  colourBrightness.js
  *
- *  Copyright 2013, Jamie Brittain - http://jamiebrittain.com
+ *  Copyright 2013-2016, Jamie Brittain - http://jamiebrittain.com
  *  Released under the WTFPL license
  *  http://sam.zoy.org/wtfpl/
  *
  *  Github:  http://github.com/jamiebrittain/colourBrightness.js
- *  Version: 1.1
+ *  Version: 1.2
  */
 
 (function($){
@@ -22,7 +22,7 @@
       }
       return bgColor;
     }
-    
+
     var r,g,b,brightness,
         colour = getBackgroundColor(this);
 
@@ -52,5 +52,5 @@
       this.removeClass("dark").addClass("light");
     }
     return this;
-  }
+  };
 })(jQuery);
